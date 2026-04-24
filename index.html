@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Good Taxi 45 — Taxi dans le Loiret. Particuliers, gares, aéroports, hôtels, entreprises et colis. Disponible 7j/7." />
+  <meta name="theme-color" content="#f4ede0" />
+  <title>Good Taxi 45 — Taxi conventionné dans le Loiret</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css?v=11" />
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Good Taxi 45 — Accueil">
+        <img src="logo.svg" alt="Good Taxi 45 — Le plaisir de vous conduire" />
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="particuliers.html">Particuliers</a></li>
+          <li><a href="gares-aeroports.html">Gares &amp; aéroports</a></li>
+          <li><a href="hotels.html">Hôtels</a></li>
+          <li><a href="entreprises.html">Entreprises</a></li>
+          <li><a href="colis.html">Colis</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#taxi-club" class="btn nav-app-btn">
+          <img src="img/taxi-club-logo.png" alt="" style="height: 1.4em; width: auto; border-radius: 5px; flex-shrink:0; display:block;">
+          Taxi Club App
+        </a>
+        <a href="tel:0238241151" class="btn btn--primary btn--call" aria-label="Appeler Good Taxi 45">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          02 38 24 11 51
+        </a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section class="hero hero--bg-photo" style="background-image: url('hero-accueil.jpg'); background-position: center center;">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Le plaisir de vous conduire<br />dans <span class="highlight">le&nbsp;Loiret</span>.</h1>
+          <p class="tagline">Trajets particuliers, transferts gares &amp; aéroports, partenariats hôtels &amp; événements, comptes entreprises et livraison de colis urgents —<br>une équipe disponible 7 jours sur 7.</p>
+          <div class="hero-actions">
+            <a href="tel:0238241151" class="btn btn--primary btn--lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Appeler 02 38 24 11 51
+            </a>
+            <a href="contact.html" class="btn btn--ghost btn--lg">Demander un trajet →</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         MARQUEE
+         ============================================ -->
+    <div class="marquee" aria-hidden="true">
+
+      <!-- Taxi illustré qui avance sur le bandeau -->
+      <div class="marquee-taxi">
+        <img src="taxi-illustration.png?v=2" alt="" />
+      </div>
+
+      <div class="marquee-track">
+        <span class="marquee-item">Un réseau de taxis pour vos déplacements</span>
+        <span class="marquee-item">24h/24 toute l'année</span>
+        <span class="marquee-item">Loiret</span>
+        <span class="marquee-item">7j/7</span>
+        <span class="marquee-item">Véhicules confortables</span>
+        <!-- duplication pour boucle infinie -->
+        <span class="marquee-item">Un réseau de taxis pour vos déplacements</span>
+        <span class="marquee-item">24h/24 toute l'année</span>
+        <span class="marquee-item">Loiret</span>
+        <span class="marquee-item">7j/7</span>
+        <span class="marquee-item">Véhicules confortables</span>
+      </div>
+    </div>
+
+    <!-- ============================================
+         SERVICES — Bento
+         ============================================ -->
+    <section class="section section--services" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Un taxi pour <em>chaque besoin</em>.</h2>
+          <p style="margin-top: var(--space-sm);">Du trajet quotidien aux partenariats hôteliers, en passant par la livraison express — nous couvrons l'ensemble de vos déplacements<br>dans le Loiret.</p>
+        </div>
+
+        <div class="services-grid reveal">
+          <!-- Mise en avant : particuliers -->
+          <a href="particuliers.html" class="service-card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 17h-1V8a1 1 0 0 0-1-1h-2.5L14 4H10L8.5 7H6a1 1 0 0 0-1 1v9H4"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="16.5" cy="17.5" r="2.5"/></svg>
+            </div>
+            <h3><em>Particuliers</em></h3>
+            <p>Trajets ponctuels, courses du quotidien, sorties, mariages — un chauffeur dédié qui connaît le Loiret comme sa poche.</p>
+            <span class="arrow">Découvrir →</span>
+          </a>
+
+          <a href="gares-aeroports.html" class="service-card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            </div>
+            <h3>Gares &amp; aéroports</h3>
+            <p>Orléans, Paris, Roissy CDG, Orly. Réservation anticipée.</p>
+            <span class="arrow">Découvrir →</span>
+          </a>
+
+          <a href="hotels.html" class="service-card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Hôtels &amp; événements</h3>
+            <p>Transferts clients, navettes mariages &amp; séminaires, numéro dédié réception.</p>
+            <span class="arrow">Découvrir →</span>
+          </a>
+
+          <a href="entreprises.html" class="service-card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h6"/></svg>
+            </div>
+            <h3>Entreprises</h3>
+            <p>Compte pro, facturation centralisée, transferts collaborateurs.</p>
+            <span class="arrow">Découvrir →</span>
+          </a>
+
+          <a href="colis.html" class="service-card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3>Colis urgent</h3>
+            <p>Plis confidentiels, pièces détachées, courses express.</p>
+            <span class="arrow">Découvrir →</span>
+          </a>
+
+          <a href="contact.html" class="service-card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Devis sur mesure</h3>
+            <p>Longue distance, événement, contrat récurrent.</p>
+            <span class="arrow">Demander →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ARGUMENTS CLÉS
+         ============================================ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Une équipe locale, une <em>qualité de service</em>.</h2>
+        </div>
+
+        <div class="features-grid reveal">
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h3>Disponibilité totale</h3>
+              <p>7 jours sur 7, 24h sur 24, y compris week-ends et jours fériés —<br>y compris à la dernière minute.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V15a1 1 0 0 0 1 1h2"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
+            </div>
+            <div>
+              <h3>Flotte adaptée</h3>
+              <p>Berlines confortables et véhicules dimensionnés pour les groupes ou le transport de bagages.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 15 8l7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
+            </div>
+            <div>
+              <h3>Chauffeurs expérimentés</h3>
+              <p>Professionnels formés, discrets et ponctuels —<br>la relation client compte autant que le trajet.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3>Proximité Loiret</h3>
+              <p>Connaissance fine du département, des communes rurales aux gares, et liaisons longue distance vers Paris.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ZONE DE COUVERTURE
+         ============================================ -->
+    <section class="section" id="zone">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Tout le Loiret — et <em>bien au-delà</em>.</h2>
+          <p>Basés au cœur du département, nous intervenons sur l'ensemble du Loiret et assurons des liaisons longue distance vers Paris et les aéroports.</p>
+        </div>
+
+        <div class="coverage reveal">
+          <div class="coverage-map" aria-hidden="true">
+            <svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carte du Loiret avec zone de couverture autour d'Orléans">
+              <defs>
+                <!-- Grain papier -->
+                <filter id="paper-grain" x="0" y="0" width="100%" height="100%">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
+                  <feColorMatrix values="0 0 0 0 0.15 0 0 0 0 0.11 0 0 0 0 0.05 0 0 0 0.12 0"/>
+                </filter>
+
+                <!-- Remplissage Loiret en points (pointillé cartographique) -->
+                <pattern id="dot-fill" x="0" y="0" width="9" height="9" patternUnits="userSpaceOnUse">
+                  <circle cx="4.5" cy="4.5" r="0.7" fill="rgba(11,11,11,0.22)"/>
+                </pattern>
+
+                <!-- Gradient zone de service -->
+                <radialGradient id="service-grad" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#f5c518" stop-opacity="0.55"/>
+                  <stop offset="60%" stop-color="#f5c518" stop-opacity="0.22"/>
+                  <stop offset="100%" stop-color="#f5c518" stop-opacity="0"/>
+                </radialGradient>
+
+                <!-- Chemin Loire — waypoints géo réels : Briare → Gien → Sully → Châteauneuf → Orléans → Meung → Beaugency -->
+                <path id="loire-path" d="M 470 330 Q 462 312 452 294 Q 440 287 427 279 Q 410 272 390 265 Q 376 258 364 251 Q 345 235 329 218 Q 291 212 253 206 Q 228 219 203 232 Q 195 240 187 247 Q 165 255 130 260" fill="none"/>
+
+                <!-- Marqueur flèche -->
+                <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto">
+                  <path d="M0,0 L10,5 L0,10 z" fill="#0b0b0b"/>
+                </marker>
+              </defs>
+
+              <!-- Fond papier + grain -->
+              <rect width="720" height="420" fill="#f4ede0"/>
+              <rect width="720" height="420" filter="url(#paper-grain)" opacity="0.9"/>
+
+              <!-- Repères de coordonnées (coins) — extrêmes réels du Loiret -->
+              <g font-family="Geist Mono, ui-monospace, monospace" font-size="7.5" fill="rgba(11,11,11,0.5)" letter-spacing="0.12em">
+                <text x="18" y="20">48°23'N</text>
+                <text x="662" y="20">3°10'E</text>
+                <text x="18" y="410">47°28'N</text>
+                <text x="662" y="410">1°30'E</text>
+              </g>
+
+              <!-- Croix de cadrage -->
+              <g stroke="#0b0b0b" stroke-width="0.9" fill="none">
+                <path d="M16,30 L16,42 M16,30 L28,30"/>
+                <path d="M704,30 L704,42 M704,30 L692,30"/>
+                <path d="M16,390 L16,378 M16,390 L28,390"/>
+                <path d="M704,390 L704,378 M704,390 L692,390"/>
+              </g>
+
+              <!-- Grille lat/long (faible) -->
+              <g stroke="rgba(11,11,11,0.06)" stroke-width="0.6" stroke-dasharray="1 4">
+                <line x1="0" y1="110" x2="720" y2="110"/>
+                <line x1="0" y1="200" x2="720" y2="200"/>
+                <line x1="0" y1="290" x2="720" y2="290"/>
+                <line x1="180" y1="0" x2="180" y2="420"/>
+                <line x1="360" y1="0" x2="360" y2="420"/>
+                <line x1="540" y1="0" x2="540" y2="420"/>
+              </g>
+
+              <!-- Courbes topographiques décoratives -->
+              <g fill="none" stroke="rgba(11,11,11,0.09)" stroke-width="0.7">
+                <path d="M 90 150 Q 240 120 390 140 Q 530 160 640 140"/>
+                <path d="M 80 180 Q 230 155 380 170 Q 520 185 640 170"/>
+                <path d="M 110 320 Q 260 305 400 315 Q 530 325 630 320"/>
+                <path d="M 130 348 Q 280 338 410 343 Q 530 350 610 348"/>
+              </g>
+
+              <!-- Silhouette Loiret — contour géographique réel (extrait de Wikimedia Commons, simplifié à 160 points) -->
+              <path id="loiret-shape"
+                    d="M 431.5 349.3 L 429.1 341.1 L 421.0 336.1 L 418.4 329.2 L 410.6 323.6 L 404.1 319.7 L 394.5 320.8 L 387.4 317.8 L 381.6 311.0 L 375.3 308.1 L 367.3 311.6 L 359.0 313.0 L 351.6 307.8 L 344.2 302.7 L 335.9 301.7 L 331.4 297.9 L 326.5 289.6 L 321.9 284.4 L 311.1 285.9 L 303.4 284.3 L 295.6 283.5 L 287.7 283.7 L 276.2 284.4 L 270.5 287.4 L 261.5 289.0 L 257.6 284.5 L 244.1 284.0 L 239.6 280.1 L 234.6 285.4 L 230.7 291.8 L 224.2 297.2 L 217.6 291.9 L 212.1 287.1 L 209.6 278.4 L 206.9 269.1 L 201.2 263.5 L 193.3 260.6 L 185.1 256.6 L 180.1 263.6 L 173.7 258.6 L 169.5 252.4 L 172.3 245.0 L 165.1 236.7 L 165.0 231.9 L 173.4 222.9 L 176.6 216.3 L 174.4 208.6 L 169.1 202.1 L 161.9 196.7 L 168.6 191.0 L 170.9 183.3 L 167.5 177.4 L 161.0 176.3 L 160.0 166.7 L 167.8 163.2 L 176.0 166.1 L 182.7 160.9 L 186.1 153.4 L 194.9 153.6 L 202.2 152.3 L 210.6 153.6 L 220.6 151.6 L 227.0 147.5 L 236.2 147.9 L 242.8 144.2 L 248.4 138.6 L 253.3 131.2 L 253.6 123.3 L 258.1 118.0 L 266.6 117.1 L 265.8 109.4 L 267.6 102.4 L 266.3 93.6 L 269.5 86.3 L 274.4 78.6 L 283.8 77.9 L 291.9 75.4 L 298.8 73.9 L 308.8 74.2 L 312.6 69.9 L 318.8 64.3 L 325.0 62.0 L 329.3 68.4 L 333.2 73.5 L 341.0 70.1 L 347.3 65.8 L 353.1 66.9 L 360.7 70.6 L 368.9 69.4 L 371.0 77.1 L 372.5 85.9 L 380.2 90.4 L 386.9 93.7 L 393.1 98.7 L 394.1 107.7 L 392.8 117.3 L 386.4 118.2 L 381.5 125.4 L 377.5 132.6 L 385.4 133.2 L 394.6 133.4 L 401.9 128.9 L 409.3 130.6 L 418.1 130.6 L 427.0 132.0 L 433.5 134.4 L 442.6 132.2 L 450.4 127.2 L 453.8 120.8 L 462.4 119.6 L 461.5 128.6 L 466.5 131.8 L 475.7 126.9 L 483.4 122.5 L 492.1 121.1 L 499.9 122.6 L 507.6 126.7 L 514.2 130.7 L 516.4 136.9 L 519.7 144.9 L 522.7 153.1 L 530.2 158.4 L 535.1 165.0 L 535.7 172.3 L 538.3 180.8 L 535.1 188.5 L 529.2 194.6 L 522.1 200.3 L 515.3 205.5 L 510.8 211.3 L 508.2 219.4 L 515.5 226.0 L 512.2 231.8 L 513.6 240.2 L 512.0 246.6 L 504.1 248.7 L 495.2 253.5 L 487.9 253.4 L 475.6 255.9 L 474.5 261.4 L 473.5 271.4 L 479.1 274.6 L 484.1 279.8 L 489.5 286.8 L 494.0 293.7 L 493.2 300.9 L 494.4 308.9 L 497.9 317.1 L 500.4 323.9 L 490.9 322.5 L 482.8 326.6 L 474.6 328.4 L 474.8 335.5 L 473.0 340.8 L 465.3 346.0 L 458.8 339.6 L 451.7 335.6 L 444.6 333.1 L 443.3 338.9 L 440.1 349.0 Z"
+                    fill="#f4ede0" stroke="#0b0b0b" stroke-width="1.8" stroke-linejoin="round"/>
+
+              <!-- Remplissage en trame de points -->
+              <use href="#loiret-shape" fill="url(#dot-fill)" stroke="none"/>
+
+              <!-- Clip pour contenir zone service et forêt dans le département -->
+              <clipPath id="loiret-clip">
+                <use href="#loiret-shape"/>
+              </clipPath>
+
+              <!-- Zone de service (gradient centré sur Orléans 253,206) — clippée au département -->
+              <g clip-path="url(#loiret-clip)">
+                <circle cx="253" cy="206" r="170" fill="url(#service-grad)"/>
+              </g>
+
+              <!-- Forêt d'Orléans — au NE d'Orléans, entre la Loire et l'A19 -->
+              <g clip-path="url(#loiret-clip)">
+                <path d="M 280 175 Q 340 160 400 172 Q 426 188 418 210 Q 380 222 336 220 Q 298 218 278 204 Q 266 188 280 175 Z"
+                      fill="rgba(47,122,74,0.16)" stroke="rgba(47,122,74,0.5)" stroke-width="0.9" stroke-dasharray="1.5 2.5"/>
+              </g>
+              <text x="312" y="195" font-family="Fraunces, Georgia, serif" font-style="italic" font-size="10" fill="#2f7a4a" letter-spacing="0.14em" opacity="0.8">Forêt d'Orléans</text>
+
+              <!-- La Loire : entre au SE (Briare), remonte au NO, repart à l'O -->
+              <g clip-path="url(#loiret-clip)">
+                <use href="#loire-path" stroke="#4a6fa5" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.78"/>
+                <use href="#loire-path" stroke="#84a3cb" stroke-width="2.6" stroke-linecap="round" fill="none" opacity="0.55"/>
+              </g>
+              <text font-family="Fraunces, Georgia, serif" font-style="italic" font-size="14" fill="#2e4a72" letter-spacing="0.25em">
+                <textPath href="#loire-path" startOffset="36%">la Loire</textPath>
+              </text>
+
+              <!-- Autoroutes : A10 (Paris→Orléans, passe à l'ouest de la ville, descend vers Blois),
+                   A71 (Orléans→Clermont, descend plein sud),
+                   A19 (transversale Nord, Artenay→Courtenay),
+                   A77 (Montargis → Gien → Briare, longe la Loire rive droite) -->
+              <g fill="none" stroke="#0b0b0b" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="3 3">
+                <!-- A10 : entre par le N (Artenay), passe à l'O d'Orléans, sort au SO vers Blois -->
+                <path d="M 260 55 Q 254 125 244 200 Q 232 270 210 345"/>
+                <!-- A71 : démarre au sud d'Orléans et descend plein sud -->
+                <path d="M 250 215 Q 265 275 275 345"/>
+                <!-- A19 : transversale nord, A10 → Courtenay -->
+                <path d="M 248 135 Q 340 130 430 128 Q 500 130 540 148"/>
+                <!-- A77 : Montargis → Gien → Briare -->
+                <path d="M 445 130 Q 448 165 451 175 Q 445 220 427 279 Q 438 290 452 294 Q 458 320 465 346"/>
+              </g>
+
+              <!-- Écussons de route -->
+              <g font-family="Geist Mono, ui-monospace, monospace" font-weight="600">
+                <g>
+                  <rect x="243" y="72" width="28" height="14" rx="2.5" fill="#0b0b0b"/>
+                  <text x="257" y="83" font-size="9" fill="#fdd54f" text-anchor="middle">A10</text>
+                </g>
+                <g>
+                  <rect x="260" y="300" width="28" height="14" rx="2.5" fill="#0b0b0b"/>
+                  <text x="274" y="311" font-size="9" fill="#fdd54f" text-anchor="middle">A71</text>
+                </g>
+                <g>
+                  <rect x="370" y="118" width="28" height="14" rx="2.5" fill="#0b0b0b"/>
+                  <text x="384" y="129" font-size="9" fill="#fdd54f" text-anchor="middle">A19</text>
+                </g>
+                <g>
+                  <rect x="465" y="240" width="28" height="14" rx="2.5" fill="#0b0b0b"/>
+                  <text x="479" y="251" font-size="9" fill="#fdd54f" text-anchor="middle">A77</text>
+                </g>
+              </g>
+
+              <!-- Liaisons aéroports (Paris est au N / N-NE, départ d'Orléans 253,206) -->
+              <g fill="none" stroke="#0b0b0b" stroke-width="0.9" stroke-dasharray="2 3">
+                <path d="M 253 200 Q 270 120 298 42" marker-end="url(#arr)" opacity="0.7"/>
+                <path d="M 253 200 Q 295 118 348 42" marker-end="url(#arr)" opacity="0.7"/>
+              </g>
+              <g font-family="Geist Mono, ui-monospace, monospace" font-size="8" fill="#0b0b0b" letter-spacing="0.12em">
+                <text x="284" y="32" font-weight="600">↗ ORLY</text>
+                <text x="284" y="44" font-size="7" fill="#6b6256">105 km</text>
+                <text x="336" y="32" font-weight="600">↗ CDG</text>
+                <text x="336" y="44" font-size="7" fill="#6b6256">140 km</text>
+              </g>
+
+              <!-- Anneaux animés autour d'Orléans -->
+              <g fill="none" stroke="#c89811" stroke-width="1.1">
+                <circle cx="253" cy="206" r="20">
+                  <animate attributeName="r" from="14" to="130" dur="3.8s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" from="0.85" to="0" dur="3.8s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="253" cy="206" r="20">
+                  <animate attributeName="r" from="14" to="130" dur="3.8s" begin="1.3s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" from="0.7" to="0" dur="3.8s" begin="1.3s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="253" cy="206" r="20">
+                  <animate attributeName="r" from="14" to="130" dur="3.8s" begin="2.6s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" from="0.55" to="0" dur="3.8s" begin="2.6s" repeatCount="indefinite"/>
+                </circle>
+              </g>
+
+              <!-- Villes : positions géographiques réelles (lat/long → pixel) -->
+              <g font-family="Geist Mono, ui-monospace, monospace" fill="#0b0b0b">
+                <!-- Orléans (préfecture) — 47.9°N 1.9°E -->
+                <circle cx="253" cy="206" r="9" fill="#0b0b0b"/>
+                <circle cx="253" cy="206" r="4.5" fill="#f5c518"/>
+                <text x="269" y="201" font-family="Fraunces, Georgia, serif" font-size="15" font-weight="500" letter-spacing="0.02em">Orléans</text>
+                <text x="269" y="214" font-size="7.5" fill="#6b6256" letter-spacing="0.15em">PRÉFECTURE · 45</text>
+
+                <!-- Métropole orléanaise -->
+                <g fill="#0b0b0b">
+                  <circle cx="245" cy="190" r="2.6"/>  <!-- Saran -->
+                  <circle cx="257" cy="197" r="2.6"/>  <!-- Fleury -->
+                  <circle cx="241" cy="203" r="2.6"/>  <!-- St-Jean-de-la-Ruelle -->
+                  <circle cx="266" cy="201" r="2.6"/>  <!-- St-Jean-de-Braye -->
+                  <circle cx="251" cy="219" r="2.6"/>  <!-- Olivet -->
+                </g>
+                <text x="232" y="178" font-size="7.5" fill="#6b6256" letter-spacing="0.14em" text-anchor="end">Saran · Fleury</text>
+                <text x="264" y="232" font-size="7.5" fill="#6b6256" letter-spacing="0.14em">Olivet</text>
+
+                <!-- Pithiviers (N, ~45 km) — 48.17°N 2.25°E -->
+                <circle cx="335" cy="116" r="5.5" fill="#0b0b0b"/>
+                <text x="347" y="113" font-family="Fraunces, Georgia, serif" font-size="12" font-weight="500">Pithiviers</text>
+                <text x="347" y="126" font-size="7" fill="#6b6256" letter-spacing="0.12em">N · 45 KM</text>
+
+                <!-- Montargis (NE, ~70 km) — 48.00°N 2.73°E -->
+                <circle cx="451" cy="175" r="5.5" fill="#0b0b0b"/>
+                <text x="463" y="172" font-family="Fraunces, Georgia, serif" font-size="12" font-weight="500">Montargis</text>
+                <text x="463" y="185" font-size="7" fill="#6b6256" letter-spacing="0.12em">NE · 70 KM</text>
+
+                <!-- Châteauneuf-sur-Loire (E, ~25 km) — 47.87°N 2.22°E -->
+                <circle cx="329" cy="218" r="4" fill="#0b0b0b"/>
+                <text x="334" y="232" font-family="Fraunces, Georgia, serif" font-size="10.5" font-weight="500">Châteauneuf</text>
+
+                <!-- Sully-sur-Loire (ESE, ~45 km) — 47.77°N 2.37°E -->
+                <circle cx="364" cy="251" r="4.5" fill="#0b0b0b"/>
+                <text x="372" y="265" font-family="Fraunces, Georgia, serif" font-size="11" font-weight="500">Sully-sur-Loire</text>
+
+                <!-- Gien (ESE, ~70 km) — 47.69°N 2.63°E -->
+                <circle cx="427" cy="279" r="5.5" fill="#0b0b0b"/>
+                <text x="417" y="274" font-family="Fraunces, Georgia, serif" font-size="12" font-weight="500" text-anchor="end">Gien</text>
+                <text x="417" y="286" font-size="7" fill="#6b6256" letter-spacing="0.12em" text-anchor="end">E · 70 KM</text>
+
+                <!-- Briare (SE, ~85 km, pointe extrême) — 47.63°N 2.74°E -->
+                <circle cx="452" cy="294" r="4.5" fill="#0b0b0b"/>
+                <text x="460" y="307" font-family="Fraunces, Georgia, serif" font-size="11" font-weight="500">Briare</text>
+                <text x="460" y="319" font-size="7" fill="#6b6256" letter-spacing="0.12em">SE · 85 KM</text>
+
+                <!-- Beaugency (O, ~30 km) — 47.78°N 1.63°E -->
+                <circle cx="187" cy="247" r="5" fill="#0b0b0b"/>
+                <text x="181" y="265" font-family="Fraunces, Georgia, serif" font-size="11" font-weight="500" text-anchor="end">Beaugency</text>
+                <text x="181" y="276" font-size="7" fill="#6b6256" letter-spacing="0.12em" text-anchor="end">O · 30 KM</text>
+
+                <!-- Meung-sur-Loire -->
+                <circle cx="203" cy="232" r="3.5" fill="#0b0b0b"/>
+                <text x="210" y="228" font-family="Fraunces, Georgia, serif" font-size="9.5" font-weight="500">Meung</text>
+              </g>
+
+              <!-- Boussole -->
+              <g transform="translate(660, 66)">
+                <circle r="22" fill="#f4ede0" stroke="#0b0b0b" stroke-width="1"/>
+                <circle r="22" fill="none" stroke="rgba(11,11,11,0.2)" stroke-width="0.5" stroke-dasharray="1 2"/>
+                <path d="M 0,-18 L 3,0 L 0,18 L -3,0 Z" fill="#0b0b0b"/>
+                <path d="M 0,-18 L 3,0 L 0,0 Z" fill="#c89811"/>
+                <circle r="2" fill="#f5c518" stroke="#0b0b0b" stroke-width="0.6"/>
+                <text y="-26" font-family="Geist Mono, ui-monospace, monospace" font-size="8" fill="#0b0b0b" text-anchor="middle" font-weight="600" letter-spacing="0.1em">N</text>
+                <text y="31" font-family="Geist Mono, ui-monospace, monospace" font-size="8" fill="#0b0b0b" text-anchor="middle" font-weight="600" letter-spacing="0.1em">S</text>
+                <text x="28" y="3" font-family="Geist Mono, ui-monospace, monospace" font-size="8" fill="#0b0b0b" text-anchor="middle" font-weight="600" letter-spacing="0.1em">E</text>
+                <text x="-28" y="3" font-family="Geist Mono, ui-monospace, monospace" font-size="8" fill="#0b0b0b" text-anchor="middle" font-weight="600" letter-spacing="0.1em">O</text>
+              </g>
+
+              <!-- Échelle -->
+              <g transform="translate(30, 378)" font-family="Geist Mono, ui-monospace, monospace" fill="#0b0b0b">
+                <line x1="0" y1="0" x2="96" y2="0" stroke="#0b0b0b" stroke-width="1.2"/>
+                <line x1="0" y1="-4" x2="0" y2="4" stroke="#0b0b0b" stroke-width="1.2"/>
+                <line x1="24" y1="-3" x2="24" y2="3" stroke="#0b0b0b" stroke-width="1"/>
+                <line x1="48" y1="-4" x2="48" y2="4" stroke="#0b0b0b" stroke-width="1.2"/>
+                <line x1="72" y1="-3" x2="72" y2="3" stroke="#0b0b0b" stroke-width="1"/>
+                <line x1="96" y1="-4" x2="96" y2="4" stroke="#0b0b0b" stroke-width="1.2"/>
+                <text x="0" y="14" font-size="7.5" letter-spacing="0.1em">0</text>
+                <text x="48" y="14" font-size="7.5" letter-spacing="0.1em" text-anchor="middle">20</text>
+                <text x="104" y="14" font-size="7.5" letter-spacing="0.1em">40 KM</text>
+              </g>
+
+              <!-- Cartouche titre (bas-droit) -->
+              <g transform="translate(486, 378)">
+                <rect x="0" y="-18" width="208" height="34" rx="4" fill="#0b0b0b"/>
+                <text x="12" y="-5" font-family="Geist Mono, ui-monospace, monospace" font-size="7.5" fill="rgba(253,213,79,0.6)" letter-spacing="0.2em">DÉPARTEMENT N°</text>
+                <text x="196" y="-5" font-family="Geist Mono, ui-monospace, monospace" font-size="7.5" fill="rgba(253,213,79,0.6)" letter-spacing="0.2em" text-anchor="end">45</text>
+                <text x="12" y="10" font-family="Fraunces, Georgia, serif" font-style="italic" font-size="13" fill="#fdd54f" font-weight="400">Loiret — Centre-Val de Loire</text>
+              </g>
+
+              <!-- Légende -->
+              <g transform="translate(30, 54)" font-family="Geist Mono, ui-monospace, monospace" font-size="7.5" fill="#0b0b0b" letter-spacing="0.1em">
+                <rect x="-6" y="-14" width="132" height="68" fill="rgba(244,237,224,0.85)" stroke="rgba(11,11,11,0.25)" stroke-width="0.6"/>
+                <text x="0" y="-4" font-weight="600">LÉGENDE</text>
+                <g transform="translate(0, 8)">
+                  <circle cx="4" cy="0" r="4" fill="#0b0b0b"/>
+                  <circle cx="4" cy="0" r="2" fill="#f5c518"/>
+                  <text x="14" y="3">Préfecture</text>
+                </g>
+                <g transform="translate(0, 22)">
+                  <circle cx="4" cy="0" r="3" fill="#0b0b0b"/>
+                  <text x="14" y="3">Ville desservie</text>
+                </g>
+                <g transform="translate(0, 36)">
+                  <line x1="0" y1="0" x2="10" y2="0" stroke="#4a6fa5" stroke-width="3" opacity="0.75"/>
+                  <text x="14" y="3">La Loire</text>
+                </g>
+                <g transform="translate(0, 48)">
+                  <line x1="0" y1="0" x2="10" y2="0" stroke="#0b0b0b" stroke-width="1" stroke-dasharray="2 2"/>
+                  <text x="14" y="3">Autoroute</text>
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <div>
+            <h3 style="font-size: 2rem; margin-bottom: 1rem;">Principales communes desservies</h3>
+            <ul class="coverage-list">
+              <li>Orléans</li>
+              <li>Olivet</li>
+              <li>Saran</li>
+              <li>Fleury-les-Aubrais</li>
+              <li>Saint-Jean-de-Braye</li>
+              <li>Saint-Jean-de-la-Ruelle</li>
+              <li>Montargis</li>
+              <li>Pithiviers</li>
+              <li>Gien</li>
+              <li>Beaugency</li>
+              <li>Sully-sur-Loire</li>
+              <li>Châteauneuf-sur-Loire</li>
+            </ul>
+            <p style="margin-top: 1.5rem;">
+              Vous habitez ailleurs dans le Loiret ? <a href="contact.html" style="color: var(--ink); font-weight: 500; text-decoration: underline; text-decoration-color: var(--saffron); text-decoration-thickness: 3px; text-underline-offset: 3px;">Contactez-nous</a> pour vérifier la disponibilité.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TAXI CLUB — APPLICATION GIE
+         ============================================ -->
+    <section class="taxi-club" id="taxi-club">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Réservez votre taxi en <em>un seul geste</em>.</h2>
+        </div>
+        <p class="taxi-club-lede">Notre GIE rejoint prochainement l'application <b style="color: var(--saffron); font-weight: 500;">TAXI CLUB</b> — la solution de réservation utilisée par les groupements de taxis partout en France. Où que vous soyez dans le Loiret, estimez, commandez et suivez votre course depuis votre téléphone.</p>
+
+        <div class="reveal">
+          <ol class="taxi-club-features">
+            <li>
+              <span class="num">01</span>
+              <div class="body">
+                <h3>Commande immédiate ou réservation</h3>
+                <p>Un trajet pour maintenant, ou programmé pour demain matin 6h : l'application gère les deux en quelques secondes.</p>
+              </div>
+              <span class="icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </span>
+            </li>
+            <li>
+              <span class="num">02</span>
+              <div class="body">
+                <h3>Suivi du taxi en temps réel</h3>
+                <p>Visualisez la position de votre chauffeur sur la carte, le temps d'arrivée estimé et recevez une alerte dès qu'il arrive.</p>
+              </div>
+              <span class="icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </span>
+            </li>
+            <li>
+              <span class="num">03</span>
+              <div class="body">
+                <h3>Paiement directement dans l'app</h3>
+                <p>Plus besoin de liquide : réglez par carte depuis l'application et recevez votre reçu par email instantanément.</p>
+              </div>
+              <span class="icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="5" width="20" height="14" rx="2"/>
+                  <line x1="2" y1="10" x2="22" y2="10"/>
+                </svg>
+              </span>
+            </li>
+          </ol>
+
+          <div class="taxi-club-stores" aria-label="Téléchargement de l'application Taxi Club">
+            <a href="#" class="store-btn" aria-label="Télécharger sur l'App Store (bientôt)">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                <path d="M17.05 12.04c-.03-3.1 2.53-4.6 2.64-4.67-1.44-2.1-3.68-2.39-4.48-2.42-1.91-.19-3.72 1.12-4.69 1.12-.97 0-2.46-1.09-4.04-1.06-2.08.03-4 1.21-5.06 3.07-2.16 3.75-.55 9.3 1.55 12.34 1.03 1.49 2.26 3.17 3.87 3.11 1.55-.06 2.14-1 4.02-1 1.88 0 2.41 1 4.05.97 1.67-.03 2.73-1.52 3.75-3.02 1.18-1.74 1.67-3.43 1.69-3.52-.04-.02-3.24-1.24-3.3-4.92zM14.12 4.05c.86-1.04 1.43-2.49 1.28-3.93-1.23.05-2.72.82-3.6 1.85-.79.91-1.49 2.38-1.3 3.79 1.37.11 2.77-.69 3.62-1.71z"/>
+              </svg>
+              <span>
+                <span class="store-top">Bientôt sur</span>
+                <span class="store-bottom">App Store</span>
+              </span>
+            </a>
+            <a href="#" class="store-btn" aria-label="Disponible sur Google Play (bientôt)">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                <path d="M3.18 2.17c-.32.34-.5.86-.5 1.54v16.58c0 .68.18 1.2.5 1.54l.06.06 9.29-9.29v-.21L3.24 3.1l-.06.07zm12.61 12.37l-3.1-3.1v-.21l3.1-3.1.07.04 3.67 2.09c1.05.59 1.05 1.56 0 2.16l-3.67 2.08-.07.04zm-.54.54L12.11 12l-8.93 8.93c.35.37.92.42 1.57.05l10.5-5.97zm0-9.16l-10.5-5.97c-.65-.37-1.22-.32-1.57.05L12.11 12l3.14-3.08z"/>
+              </svg>
+              <span>
+                <span class="store-top">Bientôt sur</span>
+                <span class="store-bottom">Google Play</span>
+              </span>
+            </a>
+          </div>
+
+          <p class="taxi-club-note">En attendant <b>—</b> réservez au <b>02 38 24 11 51</b></p>
+        </div>
+
+        <div class="taxi-club-visual reveal" aria-hidden="true">
+          <div class="phone-ping">
+            <span class="pulse"></span>
+            CHAUFFEUR À 3 MIN
+          </div>
+
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-status">
+                <span>9:41</span>
+                <span>●●● ◶ 94%</span>
+              </div>
+              <div class="phone-header">
+                <div class="brand">
+                  <span class="brand-name">TAXI CLUB · 45</span>
+                  <span class="brand-dot" aria-hidden="true"></span>
+                </div>
+                <h4>Votre course,<br /><em>en approche.</em></h4>
+              </div>
+              <div class="phone-map">
+                <svg viewBox="0 0 240 260" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <pattern id="phdot" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+                      <circle cx="6" cy="6" r="0.6" fill="rgba(11,11,11,0.18)"/>
+                    </pattern>
+                    <linearGradient id="phroute" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#0b0b0b"/>
+                      <stop offset="100%" stop-color="#c89811"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="240" height="260" fill="url(#phdot)"/>
+                  <!-- rues -->
+                  <g stroke="rgba(11,11,11,0.18)" stroke-width="10" stroke-linecap="round" fill="none">
+                    <path d="M -10 80 Q 60 90 130 70 T 260 50"/>
+                    <path d="M 40 -10 Q 50 80 80 140 T 120 270"/>
+                    <path d="M -10 170 Q 80 190 160 175 T 260 200"/>
+                    <path d="M 180 -10 Q 185 80 200 140 T 220 270"/>
+                  </g>
+                  <g stroke="rgba(11,11,11,0.08)" stroke-width="4" stroke-linecap="round" fill="none">
+                    <path d="M -10 120 Q 80 115 160 125 T 260 115"/>
+                    <path d="M 100 -10 Q 110 80 130 200"/>
+                  </g>
+                  <!-- Loire -->
+                  <path d="M -10 210 Q 60 200 120 215 T 250 200" stroke="#84a3cb" stroke-width="6" fill="none" opacity="0.55" stroke-linecap="round"/>
+                  <!-- route course -->
+                  <path d="M 45 210 Q 80 160 120 150 T 190 70" stroke="url(#phroute)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-dasharray="0 0"/>
+                  <!-- Point départ (vous) -->
+                  <g transform="translate(45, 210)">
+                    <circle r="10" fill="#0b0b0b" opacity="0.12"/>
+                    <circle r="5" fill="#2f7a4a"/>
+                    <circle r="2" fill="#f4ede0"/>
+                  </g>
+                  <!-- Point arrivée -->
+                  <g transform="translate(190, 70)">
+                    <path d="M 0 -14 L 5 0 L 0 14 L -5 0 Z" fill="#0b0b0b"/>
+                    <circle r="3" fill="#f5c518"/>
+                  </g>
+                  <!-- Taxi en mouvement -->
+                  <g transform="translate(115, 148)">
+                    <circle r="14" fill="#f5c518" opacity="0.25">
+                      <animate attributeName="r" from="10" to="22" dur="1.8s" repeatCount="indefinite"/>
+                      <animate attributeName="opacity" from="0.35" to="0" dur="1.8s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle r="9" fill="#0b0b0b"/>
+                    <text y="3" font-family="Geist Mono, ui-monospace, monospace" font-size="8" font-weight="700" fill="#f5c518" text-anchor="middle">T</text>
+                  </g>
+                </svg>
+              </div>
+              <div class="phone-trip">
+                <div class="row">
+                  <span class="dot green"></span>
+                  <span>ORLÉANS · GARE CENTRALE</span>
+                </div>
+                <div class="row">
+                  <span class="dot ink"></span>
+                  <span>ORLY · AÉROPORT</span>
+                </div>
+              </div>
+              <div class="phone-cta">
+                <span>Réserver la course</span>
+                <span class="price">105 €</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="phone-receipt">
+            <div class="rtop">
+              <span>REÇU · N°4521</span>
+              <span>22 AVR</span>
+            </div>
+            <div>Orléans → CDG</div>
+            <div class="ramount">140,00 €</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TÉMOIGNAGES
+         ============================================ -->
+    <section class="section section--alt" style="padding-top: var(--space-lg);">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Avis de <em>nos clients</em>.</h2>
+        </div>
+
+        <div class="testimonials-grid reveal">
+          <article class="testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>Je suis très contente de leurs service. La communication est au point et il sont ponctuel. Tous les chauffeurs sont professionnels, à l'écoute et plein d'empathie. Le transport est confortable je recommande. Merci pour votre service exceptionnel.</blockquote>
+            <cite>
+              <span class="testimonial-name">Daisy Ahia</span>
+              <span class="testimonial-meta">Avis Google · il y a un mois</span>
+            </cite>
+          </article>
+
+          <article class="testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>Trajets très agréables avec ce taxi (plusieurs trajets allant jusque Paris Nord). Dame très professionnelle, toujours à la recherche de votre bien être, très à l'écoute, aimable et souriante. Les trajets semblent très courts malgré les bouchons. Je recommande vivement ce taxi même pour les petites distances.</blockquote>
+            <cite>
+              <span class="testimonial-name">Sandrine Rousselle</span>
+              <span class="testimonial-meta">Avis Google · il y a 7 mois</span>
+            </cite>
+          </article>
+
+          <article class="testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>Nous sommes très satisfaits de notre prise en charge. Le conducteur est ponctuel, a une conduite douce et fait preuve d'un grand professionnalisme. Je recommande cette personne les yeux fermés. Nous ferons de nouveau appel à ce conducteur sans hésitation.</blockquote>
+            <cite>
+              <span class="testimonial-name">Colleen Weigel</span>
+              <span class="testimonial-meta">Avis Google · il y a un mois</span>
+            </cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA FINAL
+         ============================================ -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="section-header reveal final-cta-header">
+          <h2>Votre taxi, en <em>quelques secondes</em>.</h2>
+          <p>Laissez-nous vos coordonnées — nous vous rappelons sous 15 minutes, promis.</p>
+        </div>
+
+        <form class="form form--fullwidth reveal" onsubmit="event.preventDefault(); alert('Demande envoyée (démo). Merci !');">
+          <div class="form-bar">
+            <div class="form-field">
+              <label for="hp-name">Nom</label>
+              <input type="text" id="hp-name" name="name" required placeholder="Votre nom" />
+            </div>
+            <div class="form-field">
+              <label for="hp-phone">Téléphone</label>
+              <input type="tel" id="hp-phone" name="phone" required placeholder="06 12 34 56 78" />
+            </div>
+            <div class="form-field form-field--grow">
+              <label for="hp-msg">Votre demande</label>
+              <input type="text" id="hp-msg" name="message" placeholder="Ex : Orléans gare → Paris CDG, demain 6h" />
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg form-submit-btn">Demander un rappel →</button>
+          </div>
+          <p class="form-note">Ou appelez directement le <a href="tel:0238241151" style="color: var(--ink); font-weight: 600; text-decoration: underline;">02 38 24 11 51</a></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <a href="tel:0238241151" class="footer-phone" aria-label="Appeler Good Taxi 45">02 38 24 11 51 →</a>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Logo%20good%20taxi.jpg" alt="Good Taxi 45" />
+          <p>Taxi conventionné dans le Loiret. Le plaisir de vous conduire, 7j/7 et 24h/24.</p>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="particuliers.html">Particuliers</a></li>
+            <li><a href="gares-aeroports.html">Gares &amp; aéroports</a></li>
+            <li><a href="hotels.html">Hôtels</a></li>
+            <li><a href="entreprises.html">Entreprises</a></li>
+            <li><a href="colis.html">Colis urgent</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contact.html">Contact &amp; devis</a></li>
+            <li><a href="index.html#zone">Zone de couverture</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:0238241151">02 38 24 11 51</a></li>
+            <li>Loiret (45) — France</li>
+            <li>7j/7 · 24h/24</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Good Taxi 45 · <a href="mentions-legales.html" style="color: inherit; opacity: 0.6;">Mentions légales</a></span>
+        <span>Création <a href="https://emy-com.fr" target="_blank" rel="noopener" style="color: var(--saffron); opacity: 0.8; text-decoration: none;">emy&amp;emy · emy-com.fr</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       STICKY CTA MOBILE
+       ============================================ -->
+  <div class="sticky-cta">
+    <a href="tel:0238241151" aria-label="Appeler Good Taxi 45 maintenant">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Appeler maintenant — 02 38 24 11 51
+    </a>
+  </div>
+
+
+  <!-- Bouton flottant téléphone -->
+  <a href="tel:0238241151" class="fab-call" aria-label="Appeler Good Taxi 45">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span>02 38 24 11 51</span>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
