@@ -1664,6 +1664,7 @@ p {
   padding-block: var(--space-md) var(--space-md);
   position: relative;
   overflow: hidden;
+  border-top: 6px solid var(--saffron);
 }
 
 .site-footer::before {
