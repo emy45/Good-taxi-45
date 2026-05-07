@@ -113,12 +113,16 @@ export default async function handler(req, res) {
 
     if (error) {
       console.error('Resend error:', error);
-      return res.status(500).json({ error: 'Erreur lors de l\'envoi du message.' });
+      return res.status(500).json({
+        error: 'Erreur lors de l\'envoi : ' + (error.message || error.name || 'inconnue'),
+      });
     }
 
     return res.status(200).json({ ok: true, id: data?.id });
   } catch (err) {
     console.error('Handler error:', err);
-    return res.status(500).json({ error: 'Erreur serveur.' });
+    return res.status(500).json({
+      error: 'Erreur serveur : ' + (err.message || 'inconnue'),
+    });
   }
 }
