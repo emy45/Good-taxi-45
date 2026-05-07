@@ -336,13 +336,15 @@
 
               <!-- Trajet -->
               <div class="form-row">
-                <div class="form-field">
+                <div class="form-field address-field">
                   <label for="ct-from">Adresse de départ</label>
-                  <input type="text" id="ct-from" name="from" placeholder="Ex : 12 rue de Bourgogne, Orléans" />
+                  <input type="text" id="ct-from" name="from" placeholder="Ex : 12 rue de Bourgogne, Orléans" autocomplete="off" />
+                  <ul class="address-suggestions" id="ct-from-suggestions" role="listbox" hidden></ul>
                 </div>
-                <div class="form-field">
+                <div class="form-field address-field">
                   <label for="ct-to">Adresse d'arrivée</label>
-                  <input type="text" id="ct-to" name="to" placeholder="Ex : Aéroport Roissy CDG terminal 2E" />
+                  <input type="text" id="ct-to" name="to" placeholder="Ex : Aéroport Roissy CDG terminal 2E" autocomplete="off" />
+                  <ul class="address-suggestions" id="ct-to-suggestions" role="listbox" hidden></ul>
                 </div>
               </div>
 
@@ -376,6 +378,139 @@
               <p class="form-note">Champs marqués * obligatoires. Pour une demande urgente, appelez le <a href="tel:0238241151" style="color: var(--color-primary-dark); font-weight: 700;">02 38 24 11 51</a>.</p>
               <div id="contact-feedback" role="status" aria-live="polite" style="margin-top: 1rem;"></div>
             </form>
+
+            <style>
+              .address-field { position: relative; }
+              .address-suggestions {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                z-index: 50;
+                margin: 4px 0 0 0;
+                padding: 0.4rem 0;
+                list-style: none;
+                background: #fff;
+                border: 1px solid var(--line, rgba(11,11,11,0.14));
+                border-radius: 10px;
+                box-shadow: 0 12px 28px -10px rgba(11,11,11,0.18);
+                max-height: 280px;
+                overflow-y: auto;
+              }
+              .address-suggestions li {
+                padding: 0.6rem 0.9rem;
+                cursor: pointer;
+                font-size: 0.95rem;
+                line-height: 1.35;
+                color: var(--ink, #0b0b0b);
+              }
+              .address-suggestions li:hover,
+              .address-suggestions li.is-active {
+                background: var(--paper-deep, #f3f3f3);
+              }
+              .address-suggestions li .addr-context {
+                display: block;
+                font-size: 0.8rem;
+                color: var(--stone, #6b6256);
+                margin-top: 2px;
+              }
+            </style>
+
+            <script>
+              // ---------- Autocomplete adresses (BAN — api-adresse.data.gouv.fr) ----------
+              (function () {
+                function setupAddressAutocomplete(inputId, listId) {
+                  const input = document.getElementById(inputId);
+                  const list = document.getElementById(listId);
+                  if (!input || !list) return;
+
+                  let timer = null;
+                  let activeIndex = -1;
+                  let currentItems = [];
+
+                  const close = () => {
+                    list.hidden = true;
+                    list.innerHTML = '';
+                    activeIndex = -1;
+                    currentItems = [];
+                  };
+
+                  const render = (features) => {
+                    currentItems = features;
+                    if (!features.length) { close(); return; }
+                    list.innerHTML = features.map((f, i) => {
+                      const p = f.properties;
+                      const main = p.name || p.label;
+                      const ctx = [p.postcode, p.city].filter(Boolean).join(' · ');
+                      return '<li role="option" data-index="' + i + '">' +
+                        '<span>' + escapeHTML(main) + '</span>' +
+                        (ctx ? '<span class="addr-context">' + escapeHTML(ctx) + '</span>' : '') +
+                        '</li>';
+                    }).join('');
+                    list.hidden = false;
+                    activeIndex = -1;
+                  };
+
+                  const escapeHTML = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+                  const select = (i) => {
+                    const f = currentItems[i];
+                    if (!f) return;
+                    input.value = f.properties.label;
+                    close();
+                  };
+
+                  const fetchSuggestions = async (q) => {
+                    try {
+                      // Biais sur Orléans (lat/lon) pour favoriser le Loiret, mais résultats France entière
+                      const url = 'https://api-adresse.data.gouv.fr/search/?q=' + encodeURIComponent(q) +
+                                  '&limit=6&autocomplete=1&lat=47.9027&lon=1.9090';
+                      const res = await fetch(url);
+                      if (!res.ok) return;
+                      const json = await res.json();
+                      render(json.features || []);
+                    } catch (e) { /* silencieux */ }
+                  };
+
+                  input.addEventListener('input', () => {
+                    const q = input.value.trim();
+                    if (timer) clearTimeout(timer);
+                    if (q.length < 3) { close(); return; }
+                    timer = setTimeout(() => fetchSuggestions(q), 220);
+                  });
+
+                  input.addEventListener('keydown', (e) => {
+                    if (list.hidden) return;
+                    const items = list.querySelectorAll('li');
+                    if (e.key === 'ArrowDown') {
+                      e.preventDefault();
+                      activeIndex = Math.min(activeIndex + 1, items.length - 1);
+                      items.forEach((el, i) => el.classList.toggle('is-active', i === activeIndex));
+                    } else if (e.key === 'ArrowUp') {
+                      e.preventDefault();
+                      activeIndex = Math.max(activeIndex - 1, 0);
+                      items.forEach((el, i) => el.classList.toggle('is-active', i === activeIndex));
+                    } else if (e.key === 'Enter') {
+                      if (activeIndex >= 0) { e.preventDefault(); select(activeIndex); }
+                    } else if (e.key === 'Escape') {
+                      close();
+                    }
+                  });
+
+                  list.addEventListener('mousedown', (e) => {
+                    const li = e.target.closest('li');
+                    if (!li) return;
+                    e.preventDefault();
+                    select(parseInt(li.dataset.index, 10));
+                  });
+
+                  input.addEventListener('blur', () => setTimeout(close, 120));
+                }
+
+                setupAddressAutocomplete('ct-from', 'ct-from-suggestions');
+                setupAddressAutocomplete('ct-to', 'ct-to-suggestions');
+              })();
+            </script>
 
             <script>
               (function () {
