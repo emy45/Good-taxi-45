@@ -293,7 +293,9 @@
             <h2>Formulaire de contact</h2>
             <p>Remplissez ce formulaire et nous vous recontactons sous 1 heure ouvrée. Pour une réservation immédiate, privilégiez le téléphone.</p>
 
-            <form class="form form--inline" onsubmit="event.preventDefault(); alert('Demande envoyée (démo). Nous vous recontactons rapidement. Merci !');" novalidate>
+            <form id="contact-form" class="form form--inline" novalidate>
+              <!-- Honeypot anti-bot -->
+              <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px; opacity:0;" />
 
               <!-- Identité -->
               <div class="form-row">
@@ -370,9 +372,50 @@
                 </label>
               </div>
 
-              <button type="submit" class="btn btn--primary btn--lg">Envoyer ma demande</button>
+              <button type="submit" class="btn btn--primary btn--lg" id="contact-submit">Envoyer ma demande</button>
               <p class="form-note">Champs marqués * obligatoires. Pour une demande urgente, appelez le <a href="tel:0238241151" style="color: var(--color-primary-dark); font-weight: 700;">02 38 24 11 51</a>.</p>
+              <div id="contact-feedback" role="status" aria-live="polite" style="margin-top: 1rem;"></div>
             </form>
+
+            <script>
+              (function () {
+                const form = document.getElementById('contact-form');
+                const submitBtn = document.getElementById('contact-submit');
+                const feedback = document.getElementById('contact-feedback');
+                if (!form) return;
+
+                form.addEventListener('submit', async function (e) {
+                  e.preventDefault();
+                  feedback.innerHTML = '';
+                  submitBtn.disabled = true;
+                  const originalText = submitBtn.textContent;
+                  submitBtn.textContent = 'Envoi en cours…';
+
+                  const data = Object.fromEntries(new FormData(form).entries());
+
+                  try {
+                    const res = await fetch('/api/contact', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify(data),
+                    });
+                    const json = await res.json();
+
+                    if (res.ok && json.ok) {
+                      feedback.innerHTML = '<p style="background:#e8f5ed;border:1px solid #2f7a4a;color:#1e5a35;padding:0.9rem 1.1rem;border-radius:8px;">✅ Demande envoyée. Nous vous recontactons rapidement. Merci !</p>';
+                      form.reset();
+                    } else {
+                      feedback.innerHTML = '<p style="background:#fdecea;border:1px solid #b7412b;color:#7a2818;padding:0.9rem 1.1rem;border-radius:8px;">❌ ' + (json.error || 'Erreur lors de l\'envoi. Merci de réessayer ou d\'appeler le 02 38 24 11 51.') + '</p>';
+                    }
+                  } catch (err) {
+                    feedback.innerHTML = '<p style="background:#fdecea;border:1px solid #b7412b;color:#7a2818;padding:0.9rem 1.1rem;border-radius:8px;">❌ Erreur réseau. Merci de réessayer ou d\'appeler le 02 38 24 11 51.</p>';
+                  } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalText;
+                  }
+                });
+              })();
+            </script>
           </div>
 
         </div>
