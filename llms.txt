@@ -1,4 +1,4 @@
-# Good Taxi 45
+# Good Taxis 45
 
 > Groupement de taxis indépendants du Loiret (département 45, France). Issus du transport sanitaire (VSL), ils ouvrent un service de taxi 7j/7 et 24h/24 pour tous : particuliers, entreprises, hôtels, colis.
 

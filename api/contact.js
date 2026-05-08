@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const TO_EMAIL = 'emy@emy-com.fr';
-const FROM_EMAIL = 'Good Taxi 45 <onboarding@resend.dev>';
+const FROM_EMAIL = 'Good Taxis 45 <onboarding@resend.dev>';
 
 const escapeHtml = (str = '') =>
   String(str)
@@ -57,12 +57,12 @@ export default async function handler(req, res) {
     };
     const typeLabel = typeLabels[type] || type;
 
-    const subject = `[Good Taxi 45] Nouvelle demande — ${escapeHtml(firstname)} ${escapeHtml(lastname)} (${escapeHtml(typeLabel)})`;
+    const subject = `[Good Taxis 45] Nouvelle demande — ${escapeHtml(firstname)} ${escapeHtml(lastname)} (${escapeHtml(typeLabel)})`;
 
     const html = `
       <div style="font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #0b0b0b;">
         <div style="background: #0b0b0b; color: #f5c518; padding: 18px 24px; border-radius: 8px 8px 0 0;">
-          <h1 style="margin: 0; font-size: 18px;">Nouvelle demande Good Taxi 45</h1>
+          <h1 style="margin: 0; font-size: 18px;">Nouvelle demande Good Taxis 45</h1>
         </div>
         <div style="border: 1px solid #eee; border-top: none; padding: 24px; border-radius: 0 0 8px 8px;">
           <table style="width: 100%; border-collapse: collapse;">
@@ -89,7 +89,7 @@ export default async function handler(req, res) {
     `;
 
     const text = [
-      `Nouvelle demande Good Taxi 45`,
+      `Nouvelle demande Good Taxis 45`,
       ``,
       `Type : ${typeLabel}`,
       `Nom : ${firstname} ${lastname}`,
