@@ -1140,7 +1140,23 @@ p {
   flex-shrink: 0;
 }
 
-/* ---------- 10. TÉMOIGNAGES ---------- */
+/* ---------- 10. STAT DISPLAY ---------- */
+.stat-display {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.stat-display strong {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--ink);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* ---------- TÉMOIGNAGES ---------- */
 .testimonials-grid {
   display: grid;
   gap: var(--space-md);
