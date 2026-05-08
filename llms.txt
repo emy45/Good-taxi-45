@@ -9,11 +9,12 @@
 
 ## Services
 
-- [Particuliers](https://www.goodtaxi45.fr/particuliers.html) — courses du quotidien, sorties, mariages, rendez-vous, tarif annoncé avant départ
-- [Gares & aéroports](https://www.goodtaxi45.fr/gares-aeroports.html) — Orléans, Paris Austerlitz, Roissy CDG, Orly · forfait annoncé · suivi vol & train
-- [Hôtels](https://www.goodtaxi45.fr/hotels.html) — partenariats, ligne dédiée réception, navettes mariages & séminaires, facturation mensuelle
+- [Gares & Aéroports](https://www.goodtaxi45.fr/gares-aeroports.html) — Orléans, Paris Austerlitz, Roissy CDG, Orly · forfait annoncé · suivi vol & train
 - [Entreprises](https://www.goodtaxi45.fr/entreprises.html) — compte pro, facturation centralisée, paiement 30 jours, transferts collaborateurs
+- [Hôtels](https://www.goodtaxi45.fr/hotels.html) — partenariats, ligne dédiée réception, navettes mariages & séminaires, facturation mensuelle
+- [Assistance](https://www.goodtaxi45.fr/assistance.html) — dépannage, relais assurance, prise en charge en cas de panne ou d'accident, conventionné assurances
 - [Colis](https://www.goodtaxi45.fr/colis.html) — course urgente, plis confidentiels, pièces détachées, prise en charge sous 30 min
+- [Particuliers](https://www.goodtaxi45.fr/particuliers.html) — courses du quotidien, sorties, mariages, rendez-vous, tarif annoncé avant départ
 
 ## À propos
 

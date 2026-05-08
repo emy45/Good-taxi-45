@@ -51,6 +51,7 @@ export default async function handler(req, res) {
       particulier: 'Course particulier',
       'gare-aeroport': 'Transfert gare / aéroport',
       entreprise: 'Entreprise / hôtel',
+      assistance: 'Assistance / dépannage',
       colis: 'Livraison de colis',
       autre: 'Autre / question',
     };
