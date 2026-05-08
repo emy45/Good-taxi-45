@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réserver un taxi — Good Taxis 45</title>
+  <meta name="description" content="Réservez votre taxi Good Taxis 45 dans le Loiret. Disponible 7j/7 et 24h/24. ☎ 02 38 24 11 51." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="logo_ok.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0b0b0b;
+      --saffron: #f5c518;
+      --paper: #faf8f3;
+      --radius: 16px;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      background: var(--ink);
+      color: #fff;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100svh;
+      padding: 2rem 1.25rem;
+      gap: 0;
+    }
+
+    /* LOGO */
+    .logo {
+      display: block;
+      width: 180px;
+      margin: 0 auto 2rem;
+    }
+
+    /* TITRE */
+    .heading {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    .heading h1 {
+      font-size: clamp(1.5rem, 6vw, 2rem);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .heading h1 span {
+      color: var(--saffron);
+    }
+    .heading p {
+      margin-top: 0.6rem;
+      font-size: 0.95rem;
+      opacity: 0.65;
+      font-weight: 500;
+    }
+
+    /* BADGE DISPO */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(245,197,24,0.12);
+      border: 1px solid rgba(245,197,24,0.3);
+      color: var(--saffron);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      margin: 1.25rem auto 2rem;
+    }
+    .badge .dot {
+      width: 7px;
+      height: 7px;
+      background: #4caf50;
+      border-radius: 50%;
+      animation: pulse 1.8s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    /* BOUTONS */
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 1.1rem 1.5rem;
+      border-radius: var(--radius);
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: transform 0.15s, opacity 0.15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn:active { transform: scale(0.97); opacity: 0.9; }
+
+    .btn--call {
+      background: var(--saffron);
+      color: var(--ink);
+      font-size: 1.15rem;
+    }
+    .btn--whatsapp {
+      background: #25d366;
+      color: #fff;
+    }
+    .btn--form {
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .btn svg { flex-shrink: 0; }
+
+    /* SÉPARATEUR */
+    .sep {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: rgba(255,255,255,0.25);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      width: 100%;
+      max-width: 400px;
+      margin: 0.25rem 0;
+    }
+    .sep::before, .sep::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* INFOS BAS */
+    .infos {
+      margin-top: 2.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      opacity: 0.4;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="Logo_reserveok.png?v=54" alt="Good Taxis 45" class="logo" />
+
+  <div class="heading">
+    <h1>Réservez votre <span>taxi</span></h1>
+    <p>Loiret · Orléans et tout le département</p>
+  </div>
+
+  <span class="badge"><span class="dot"></span>Disponible maintenant · 7j/7 · 24h/24</span>
+
+  <div class="actions">
+
+    <a href="tel:0238241151" class="btn btn--call">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      02 38 24 11 51
+    </a>
+
+    <div class="sep">ou</div>
+
+    <a href="https://wa.me/33238241151?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20taxi%20%3A%0A%0A%E2%80%A2%20D%C3%A9part%20%3A%20%0A%E2%80%A2%20Arriv%C3%A9e%20%3A%20%0A%E2%80%A2%20Date%20%26%20heure%20%3A%20%0A%E2%80%A2%20Nombre%20de%20passagers%20%3A%20" target="_blank" rel="noopener" class="btn btn--whatsapp">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.52 3.48A11.87 11.87 0 0 0 12.05 0C5.46 0 .11 5.34.11 11.93c0 2.1.55 4.15 1.59 5.95L0 24l6.27-1.64a11.93 11.93 0 0 0 5.77 1.47h.01c6.58 0 11.93-5.35 11.94-11.93a11.86 11.86 0 0 0-3.47-8.42zM12.05 21.79h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.22-3.72.97 1-3.63-.24-.37a9.88 9.88 0 0 1-1.51-5.23c0-5.47 4.45-9.92 9.92-9.92 2.65 0 5.14 1.03 7.01 2.91a9.86 9.86 0 0 1 2.9 7.02c0 5.47-4.45 9.85-9.94 9.85zm5.44-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48 1.07 2.88 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.12-.27-.2-.57-.35z"/></svg>
+      WhatsApp
+    </a>
+
+    <div class="sep">ou</div>
+
+    <a href="contact.html" class="btn btn--form">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Formulaire de demande
+    </a>
+
+  </div>
+
+  <p class="infos">Good Taxis 45 · Loiret (45) · goodtaxi45.fr</p>
+
+</body>
+</html>
