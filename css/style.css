@@ -2080,6 +2080,19 @@ p {
     width: 52px;
     height: 52px;
   }
+
+  /* Titre script : réduire la taille sur mobile pour éviter le débordement */
+  .section-header h2 em,
+  .final-cta h2 em {
+    font-size: 1.1em;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: clamp(1.3rem, 5vw, 1.6rem);
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
 }
 
 /* ---------- 21. ACCESSIBILITÉ ---------- */
@@ -2966,8 +2979,9 @@ p {
 @media (max-width: 480px) {
   .fab-whatsapp {
     bottom: 1.25rem;
-    right: calc(1.25rem + 52px + 0.5rem);
+    right: calc(1.25rem + 52px + 0.6rem);
     width: 52px;
     height: 52px;
+    animation: none;
   }
 }
