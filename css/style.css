@@ -84,6 +84,7 @@ html {
   font-size: 16px;
   background: var(--paper);
   overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 
 body {
