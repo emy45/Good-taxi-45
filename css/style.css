@@ -95,7 +95,7 @@ body {
   background: var(--paper);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: 88px; /* sticky CTA mobile */
+  padding-bottom: 0;
   overflow-x: hidden;
 }
 
@@ -639,7 +639,7 @@ p {
   font-size: 1.15em;
   color: var(--ink);
   position: relative;
-  white-space: nowrap;
+  white-space: normal;
   padding: 0 0.08em 0.45em;
   display: inline-block;
 }
@@ -2075,7 +2075,7 @@ p {
 
 @media (max-width: 480px) {
   .fab-call {
-    bottom: 76px;
+    bottom: 1.25rem;
     right: 1.25rem;
     width: 52px;
     height: 52px;
@@ -2965,7 +2965,7 @@ p {
 
 @media (max-width: 480px) {
   .fab-whatsapp {
-    bottom: 76px;
+    bottom: 1.25rem;
     right: calc(1.25rem + 52px + 0.5rem);
     width: 52px;
     height: 52px;
