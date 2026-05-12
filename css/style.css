@@ -19,17 +19,17 @@
 :root {
   /* Palette "luxe taxi" — papier crème, encre, saffron */
   --ink: #0b0b0b;
-  --ink-soft: #141414;
+  --ink-soft: #0f0f0f;
   --paper: #ffffff;
-  --paper-deep: #f3f3f3;
-  --paper-tint: #fafafa;
-  --saffron: #f5c518;
-  --saffron-deep: #c89811;
-  --rouge: #b7412b;
-  --stone: #6b6256;
-  --stone-soft: #8b8274;
-  --line: rgba(11, 11, 11, 0.14);
-  --line-strong: rgba(11, 11, 11, 0.4);
+  --paper-deep: #ebebeb;
+  --paper-tint: #f5f5f5;
+  --saffron: #f5c200;
+  --saffron-deep: #c99500;
+  --rouge: #c0392b;
+  --stone: #4d4740;
+  --stone-soft: #6b6256;
+  --line: rgba(11, 11, 11, 0.18);
+  --line-strong: rgba(11, 11, 11, 0.45);
   --success: #2f7a4a;
 
   /* Compat (anciennes variables utilisées dans les pages) */
@@ -373,7 +373,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-md);
+  gap: 0.5rem;
 }
 
 .logo {
@@ -386,8 +386,14 @@ p {
 
 .logo img {
   display: block;
-  height: 72px;
+  height: 58px;
   width: auto;
+}
+
+@media (min-width: 480px) {
+  .logo img {
+    height: 68px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -2069,7 +2075,7 @@ p {
 
 @media (max-width: 480px) {
   .fab-call {
-    bottom: 1.25rem;
+    bottom: 76px;
     right: 1.25rem;
     width: 52px;
     height: 52px;
@@ -2959,7 +2965,7 @@ p {
 
 @media (max-width: 480px) {
   .fab-whatsapp {
-    bottom: 1.25rem;
+    bottom: 76px;
     right: calc(1.25rem + 52px + 0.5rem);
     width: 52px;
     height: 52px;
