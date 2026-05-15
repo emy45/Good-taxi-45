@@ -836,15 +836,16 @@ p {
   background: var(--ink);
   color: #ffffff;
   padding-block: 1.1rem;
-  overflow-y: visible;   /* le taxi peut dépasser vers le haut */
-  overflow-x: clip;      /* bloque le layout overflow horizontal sans créer de BFC */
+  overflow: visible;     /* le taxi peut dépasser vers le haut */
   position: relative;
   z-index: 10;           /* au-dessus du hero */
 }
 
-/* Seul le track de texte est clippé horizontalement */
-.marquee-track {
-  clip-path: inset(0);
+/* Wrapper qui contient uniquement la piste animée —
+   overflow:hidden crée un BFC qui bloque le layout overflow
+   sans couper le taxi illustré (qui est en dehors de ce wrapper) */
+.marquee-clip {
+  overflow: hidden;
 }
 
 .marquee-track {
