@@ -222,7 +222,6 @@ p {
 .section--services .section-header p {
   opacity: 0.72;
   max-width: none;
-  white-space: nowrap;
 }
 
 .section--alt::before,
@@ -2090,9 +2089,9 @@ p {
     white-space: normal;
   }
 
-  /* Paragraphe services : désactiver nowrap sur mobile */
-  .section--services .section-header p {
-    white-space: normal;
+  /* Masquer le br décoratif sur mobile */
+  br.hide-mobile {
+    display: none;
   }
 
   /* Paragraphe général : s'assurer que rien ne dépasse */
