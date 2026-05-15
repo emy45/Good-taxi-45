@@ -1,9 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /js/
-Disallow: /css/
-
-# Sitemap
 Sitemap: https://www.goodtaxis45.fr/sitemap.xml
 
 # Autoriser les crawlers IA (réponses conversationnelles)
