@@ -2089,11 +2089,6 @@ p {
     white-space: normal;
   }
 
-  /* Masquer le br décoratif sur mobile */
-  br.hide-mobile {
-    display: none;
-  }
-
   /* Paragraphe général : s'assurer que rien ne dépasse */
   .section-header p {
     max-width: 100%;
