@@ -835,8 +835,8 @@ p {
   background: var(--ink);
   color: #ffffff;
   padding-block: 1.1rem;
-  overflow: visible;     /* le taxi peut dépasser vers le haut */
-  overflow-x: clip;      /* bloque le layout overflow horizontal */
+  overflow-y: visible;   /* le taxi peut dépasser vers le haut */
+  overflow-x: clip;      /* bloque le layout overflow horizontal sans créer de BFC */
   position: relative;
   z-index: 10;           /* au-dessus du hero */
 }
