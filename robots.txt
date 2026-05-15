@@ -4,7 +4,7 @@ Disallow: /js/
 Disallow: /css/
 
 # Sitemap
-Sitemap: https://www.goodtaxi45.fr/sitemap.xml
+Sitemap: https://www.goodtaxis45.fr/sitemap.xml
 
 # Autoriser les crawlers IA (réponses conversationnelles)
 User-agent: GPTBot
